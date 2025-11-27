@@ -1,56 +1,55 @@
 .App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background: linear-gradient(to bottom, #87cefa, #ffffff);
   min-height: 100vh;
-}
+  padding: 40px;
+  text-align: center;
 
-/* Search Bar */
-.search-bar {
-  margin-bottom: 20px;
-}
+  background: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=1500&q=80")
+  no-repeat center center fixed;
+  background-size: cover;
 
-.search-bar input {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-right: 10px;
-}
-
-.search-bar button {
-  padding: 10px 15px;
-  background-color: #0077ff;
+  font-family: "Segoe UI", sans-serif;
   color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
-.search-bar button:hover {
-  background-color: #005fcc;
-}
-
-/* Weather Card */
 .weather-card {
-  background-color: white;
-  padding: 25px;
-  border-radius: 12px;
-  width: 320px;
-  margin: 20px auto;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.weather-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.weather-card h3 {
+  font-size: 56px;
+  margin: 15px 0 5px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.weather-card p {
+  font-size: 18px;
+  margin: 8px 0;
+  text-align: center;
+  opacity: 0.9;
 }
 
 .weather-card img {
-  width: 100px;
-}
-
-.extra-info {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.extra-info p {
-  margin: 5px 0;
+  display: block;
+  margin: 0 auto;
+  width: 110px;
 }
